@@ -55,7 +55,9 @@
 			
 				You can import (or fork and rename) the **markdown-site** site repository template to begin making your own website with the same design.
 			
-				See [here](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax) for documentation on Showdown's Markdown syntax. Unfortunately emoji's do not seem to work, eg. :-1:.
+				See [here](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax) for documentation on Showdown's Markdown syntax, and [here](https://github.com/showdownjs/showdown#setting-options) for documentation on Showdown options. 
+			
+				To use emojis you need to enable the **"emoji"** option, then emojis are eg. `:smile:`, `:+1:`, `:bacon:` and `:zap:` for :smile:, :+1:, :bacon: and :zap:. See [here](https://github.com/showdownjs/showdown/wiki/emojis) for a list of Showdown supported emojis.
 			
 				See the [About](about.html) page for information about adding/removing pages to/from your site and modifying the content/layout of your site.
 			
@@ -84,7 +86,9 @@
 		<script src="js/showdown.min.js"></script>
 		<script>
 			var converter = new showdown.Converter();
+			converter.setOption('emoji', 'on');
 			converter.setOption('tables', 'on');
+			converter.setOption('strikethrough', 'on');
 			elements = document.getElementsByClassName('markdown');
 			for(var i=0; i<elements.length; i++)
 			{

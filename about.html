@@ -92,7 +92,9 @@
 		<script src="js/showdown.min.js"></script>
 		<script>
 			var converter = new showdown.Converter();
+			converter.setOption('emoji', 'on');
 			converter.setOption('tables', 'on');
+			converter.setOption('strikethrough', 'on');
 			elements = document.getElementsByClassName('markdown');
 			for(var i=0; i<elements.length; i++)
 			{
