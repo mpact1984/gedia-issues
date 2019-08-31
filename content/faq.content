@@ -1,0 +1,41 @@
+## FAQ
+### How do I import this nsm site repository template?
+#### BitBucket:
+1. Click the <mono>+</mono> on the left of the page then click on <mono>import repository</mono>.
+2. Under <mono>URL</mono> enter <mono>https://bitbucket.org/nsm-templates/markdown-site</mono>.
+3. Under <mono>Owner</mono> select which team/user you would like to import the repository under.
+4. Under <mono>Repository name</mono> choose a name for your repository.
+5. Click <mono>Import repository</mono>.
+
+#### GitHub:
+1. Click the <mono>+</mono> on the top-right of the page then click on <mono>Import repository</mono>.
+2. Under <mono>Your old repository’s clone URL</mono> enter <mono>https://github.com/nsm-templates/markdown-site</mono>
+3. Under <mono>Owner</mono> select which organisation/user you would like to import the repository under.
+4. Under <mono>Name</mono> choose a name for your repository.
+5. Click <mono>Begin import</mono>.
+
+#### GitLab:
+1. Click the <mono>+</mono> on the top-right of the page then click on <mono>new project</mono>.
+2. Select the <mono>Import project</mono> near the top-right of the page.
+3. Select <mono>Repo by URL</mono>.
+4. Under <mono>Git repository URL</mono> enter <mono>https://gitlab.com/nsm-templates/markdown-site</mono>
+5. Under <mono>Project url</mono> select which group/user you would like to import the repository under.
+6. Under <mono>Project name</mono> and <mono>Project slug</mono> choose a name for your repository.
+7. Click <mono>Create project</mono>.
+
+### How do I fork this nsm site repository template?
+1. Make sure you're logged in to BitBucket/GitHub/GitLab with your account.
+2. On BitBucket, click the <mono>+</mono> on the left of the page then click on <mono>Fork this repository</mono>.
+3. On GitHub/GitLab, click the <mono>Fork</mono> button on the upper right-hand side of the repository page.
+
+### How do I rename the forked repository?
+1. Navigate to the main page of the forked repository.
+2. Click Settings.
+3. Under the <mono>Repository/Project name</mono> heading, enter the name you would like. On GitLab you will also need to navigate down to <mono>Advanced</mono> and change the path.
+
+### Can I remove the fork relationship?
+On GitLab you can under the advanced part of the repository's settings, unfortunately on BitBucket and GitHub you cannot (try importing instead!).
+
+### How do I view the site locally?
+1. Make a local clone of the repository on your computer.
+2. open <mono>index.html</mono> with your browser of choice.
