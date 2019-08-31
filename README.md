@@ -6,7 +6,7 @@
 
 Copyright (c) 2015-present [Nicholas Ham](https://n-ham.com).
 
-This is an official (GitHub) repository for nifty-site-manager site repository template `markdown-site`.
+This is an official (GitLab) repository for nifty-site-manager site repository template `markdown-site`.
 
 Demo:
 \[[github](https://nsm-templates.github.io/markdown-site)\] \[[gitlab](https://nsm-templates.gitlab.io/markdown-site)\]
