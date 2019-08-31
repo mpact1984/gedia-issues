@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>basic site - faq</title>
+        
+        <link rel='stylesheet' type='text/css' href='css/footer.css'>
+        <link rel='stylesheet' type='text/css' href='css/menu.css'>
+        <link rel='stylesheet' type='text/css' href='css/pagestyle.css'>
+        <link rel='stylesheet' type='text/css' href='css/pre.css'>
+        
+        <meta name='viewport' content='width=device-width, initial-scale=0.75, maximum-scale=1.0'>
+        
+        <!-- uses google-code-prettify for syntax highlighting
+             see https://github.com/google/code-prettify/ for more info -->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        
+        <!-- uses MathJax CDC for LaTeX support
+             see http://docs.mathjax.org/en/latest/start.html for more info -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config
+            ({
+                extensions: ["tex2jax.js"],
+                jax: ["input/TeX", "output/HTML-CSS"],
+                tex2jax:
+                {
+                    inlineMath: [['$','$'], ['\\(','\\)']],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true
+                },
+                "HTML-CSS": { availableFonts: ["MathJax TeX"] }
+            });
+        </script>
+        <script type="text/javascript"
+                src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+        </script>
+        
+    </head>
+
+    <body>
+        <div class="header" id="header">
+        	<img class="logo" src="img/NIFT.png" width="200px" style="margin-top:15px"><br>
+        
+        	<img class="logo" src="img/nifty-site-manager.png" width="200px"><br>
+        
+        	<a href="index.html" class="header_item">Home</a>
+        	<a href="about.html" class="header_item">About</a>
+        	<a href="faq.html" class="header_item">FAQ</a>
+        </div>
+
+		<div class="content">
+			<p id="markdown">
+## FAQ
+### How do I import this nsm site repository template?
+#### BitBucket:
+1. Click the <mono>+</mono> on the left of the page then click on <mono>import repository</mono>.
+2. Under <mono>URL</mono> enter <mono>https://bitbucket.org/nsm-templates/markdown-site</mono>.
+3. Under <mono>Owner</mono> select which team/user you would like to import the repository under.
+4. Under <mono>Repository name</mono> choose a name for your repository.
+5. Click <mono>Import repository</mono>.
+
+#### GitHub:
+1. Click the <mono>+</mono> on the top-right of the page then click on <mono>Import repository</mono>.
+2. Under <mono>Your old repository’s clone URL</mono> enter <mono>https://github.com/nsm-templates/markdown-site</mono>
+3. Under <mono>Owner</mono> select which organisation/user you would like to import the repository under.
+4. Under <mono>Name</mono> choose a name for your repository.
+5. Click <mono>Begin import</mono>.
+
+#### GitLab:
+1. Click the <mono>+</mono> on the top-right of the page then click on <mono>new project</mono>.
+2. Select the <mono>Import project</mono> near the top-right of the page.
+3. Select <mono>Repo by URL</mono>.
+4. Under <mono>Git repository URL</mono> enter <mono>https://gitlab.com/nsm-templates/markdown-site</mono>
+5. Under <mono>Project url</mono> select which group/user you would like to import the repository under.
+6. Under <mono>Project name</mono> and <mono>Project slug</mono> choose a name for your repository.
+7. Click <mono>Create project</mono>.
+
+### How do I fork this nsm site repository template?
+1. Make sure you're logged in to BitBucket/GitHub/GitLab with your account.
+2. On BitBucket, click the <mono>+</mono> on the left of the page then click on <mono>Fork this repository</mono>.
+3. On GitHub/GitLab, click the <mono>Fork</mono> button on the upper right-hand side of the repository page.
+
+### How do I rename the forked repository?
+1. Navigate to the main page of the forked repository.
+2. Click Settings.
+3. Under the <mono>Repository/Project name</mono> heading, enter the name you would like. On GitLab you will also need to navigate down to <mono>Advanced</mono> and change the path.
+
+### Can I remove the fork relationship?
+On GitLab you can under the advanced part of the repository's settings, unfortunately on BitBucket and GitHub you cannot (try importing instead!).
+
+### How do I view the site locally?
+1. Make a local clone of the repository on your computer.
+2. open <mono>index.html</mono> with your browser of choice.
+			</p>
+		</div>
+
+		<div class="footer">
+			<div class="footer_text">Markdown Site Template</div>
+			<noselect><img src="img/nsm.png" width="100px" style="margin-bottom:20px">
+			<br></noselect>
+			<b>Mirrors:</b> 
+			[<a href="https://nsm-templates.github.io/markdown-site" class="footer_item">GitHub</a>] 
+			[<a href="https://nsm-templates.gitlab.io/markdown-site" class="footer_item">GitLab</a>] 
+		
+			<p style="margin-top:0px">
+			<small>Site Manager: <a href="https://nift.cc">Nift</a></small>
+			</p>
+		
+			<noselect><small>&copy;&nbsp;2015 - <script>document.write(new Date().getFullYear())</script> <a href="https://n-ham.com/">Nicholas Ham</a></small>
+			<br><br></noselect>
+		</div>
+
+		<script src='js/process_pre_tags.js'></script>
+		<script src="js/showdown.min.js"></script>
+		<script>
+			var converter = new showdown.Converter();
+			converter.setOption('tables', 'on');
+			document.getElementById('markdown').innerHTML = converter.makeHtml(document.getElementById('markdown').innerHTML);
+		</script>
+    </body>
+</html>
+
