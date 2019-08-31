@@ -1,13 +1,13 @@
 /*
-	Has browser ignore leading tabs for <pre> code blocks.
+	Has browser ignore leading tabs for <p id="markdown"> blocks.
 	modified from: http://stackoverflow.com/a/8505182/4525897
 */
-var pre_elements = document.getElementsByTagName('pre');
-for (var i = 0; i < pre_elements.length; i++)
+var markdown_blocks = document.getElementsByClassName('markdown');
+for (var i = 0; i < markdown_blocks.length; i++)
 {
-	if(pre_elements[i].getAttribute('class') != "markdown")
+	if(markdown_blocks[i].getAttribute('class') == "markdown")
 	{
-		var content = pre_elements[i].innerHTML;
+		var content = markdown_blocks[i].innerHTML;
 
 		var tabs_to_remove = '';
 		while(content.indexOf('\t') == '0' || content.substring(0, 4) == "    ")
@@ -29,7 +29,6 @@ for (var i = 0; i < pre_elements.length; i++)
 
 		if(content.lastIndexOf("\n")>0) 
 			content = content.substring(0, content.lastIndexOf("\n"));
-
-		pre_elements[i].outerHTML = '<pre class="' + pre_elements[i].className + '">' + content + '</pre>';
+		markdown_blocks[i].outerHTML = '<p class="markdown">' + content + '</p>';
 	}
 }

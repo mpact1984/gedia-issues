@@ -42,6 +42,11 @@ div.content
 	border-top-right-radius: 8px;
 }
 
+textarea.markdown
+{
+	visibility: hidden;
+}
+
 a
 {
 	text-decoration:none;
